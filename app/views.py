@@ -9,8 +9,8 @@ def index():
     '''
     A view root function that returns the index page and its data
     '''
-    message = 'Hello World'
-    return render_template('index.html', message = message)
+    title = 'NewsAPI'
+    return render_template('index.html', title = title)
 
 
 @app.route('/news/<int:news_id>')
